@@ -1,0 +1,102 @@
+.ailoslider
+{
+position: relative;
+width: 100%;
+padding-top: 56.25%; /* 16/9 */
+margin: 30px 0;
+object-fit: contain;
+background: black;
+}
+
+.ailoslider .overlay
+{
+position: absolute;
+top: 0;
+left: 0;
+z-index: 2;
+width: 100%;
+height: 100%;
+}
+
+.ailoslider img
+{
+position: absolute;
+top: 0;
+left: 0;
+z-index: 1;
+display: block;
+width: 100%;
+height: 100%;
+
+object-fit: contain;
+transition: display 0.5s;
+}
+
+.ailoslider .legend
+{
+position: absolute;
+bottom: 8px;
+z-index: 3;
+box-sizing: border-box;
+width: 100%;
+padding: 8px 12px;
+text-align: center;
+font-size: 1.25em;
+font-family: sans-serif;
+color: white;
+text-shadow: 3px 5px 2px #474747, 0px 0px 3px rgba(0,0,0,0.64);
+}
+
+.ailoslider .pagination
+{
+position: absolute;
+top: 0;
+left: 0;
+z-index: 3;
+padding: 8px;
+font-size: 1em;
+font-family: sans-serif;
+color: white;
+text-shadow: 3px 5px 2px #474747, 0px 0px 3px rgba(0,0,0,0.64);
+}
+
+.ailo-slider a:hover
+{
+text-decoration: none;
+}
+
+.ailoslider .previous, .ailoslider .next
+{
+position: absolute;
+top: 50%;
+z-index: 3;
+padding: 0px 16px;
+cursor: pointer;
+color: white;
+font-size: 2em;
+text-shadow: 3px 5px 2px #474747, 0px 0px 3px rgba(0,0,0,0.64);
+text-decoration: none;
+border-radius: 0 3px 3px 0;
+}
+
+.ailoslider:hover .previous, .ailoslider:hover .next
+{
+background-color: rgba(0,0,0,0.8);
+}
+
+.ailoslider .next
+{
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.ailoslider .previous, .ailoslider .next, .ailoslider .pagination
+{
+/* waiting for better support. sigh */
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+<link rel="stylesheet" href="./ailoslider.css" />
+
+<style>
+#t
+{
+width: 800px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="t">
+
+<div class="ailoslider" id="sl1"></div>
+
+</div>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="./ailoslider.js"></script>
+<script>
+var sl1 = ailoslider_create('sl1', [
+{img:'http://image.noelshack.com/fichiers/2019/13/7/1554066007-1.jpg', title:'first legend'},
+{img:'http://image.noelshack.com/fichiers/2019/13/7/1554066001-2.jpg', title:'second legend'},
+{img:'http://image.noelshack.com/fichiers/2019/13/7/1554066012-3.jpg', title:'(yeah, I like Ori and the Blind Forest)'},
+], true);
+
+</script>
+
+</html>
