@@ -24,6 +24,7 @@ var sl1 = ailoslider_create('sl1', [
 {img:'2.jpg', title:'second legend'},
 {img:'3.jpg', title:'third legend'},
 ], true);
+</script>
 ```
 The "true" parameter is the enabling of swipe gesture, you may enable it if you included HammerJS.
 
